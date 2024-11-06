@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: -6770189334964829572}
   - component: {fileID: 3278439793290719601}
   - component: {fileID: 9161906730674776757}
+  - component: {fileID: 1321421956522962426}
   - component: {fileID: 5408630120540514743}
   m_Layer: 0
   m_Name: TestTile
@@ -160,6 +161,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _highlightHeight: 0.2
   _modelRoot: {fileID: 8396757319774342328}
+--- !u!114 &1321421956522962426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8351816561675918389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3c51c93e015d54aac2312db022eea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &5408630120540514743
 BoxCollider:
   m_ObjectHideFlags: 0

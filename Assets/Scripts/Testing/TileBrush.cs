@@ -4,15 +4,13 @@ using UnityEngine;
 namespace Game.Testing {
 	public class TileBrush: MonoBehaviour {
 		[SerializeField] private TileFacadeSelector _selector;
+		[SerializeField] private Planet _planet;
 		[SerializeField] private TileFacade _prefab;
 
 		private void Paint(TileFacade tile) {
-			var holder = tile.Holder;
-			tile.Tile.OnDetach(tile.Tile.Planet);
-			Destroy(tile.gameObject);
-
 			var newTile = Instantiate(_prefab);
-			newTile.AttachTo(holder);
+			_planet.Replace(tile, newTile);
+			Destroy(tile.gameObject);
 		}
 
 		private void OnEnable() {

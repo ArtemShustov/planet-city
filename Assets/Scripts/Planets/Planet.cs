@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Game.Graph;
+using System;
 using UnityEngine;
 using UnityEngine.Profiling;
 
 namespace Game.Planets {
 	public class Planet: MonoBehaviour {
-		[SerializeField] private TileHolder[] _holders;
+		[SerializeField] private TileGraph _graph;
 
 		public event Action Tick;
 
-		public IReadOnlyCollection<TileHolder> Holders => _holders;
+		public TileGraph Graph => _graph;
 
 		public void Update() {
 			if (Input.GetKeyDown(KeyCode.Space)) {
@@ -20,8 +19,12 @@ namespace Game.Planets {
 				Profiler.EndSample();
 			}
 		}
-		public TileHolder GetHolderOf(ITile tile) {
-			return _holders.First(holder => holder.Tile == tile);
+
+		public void Replace(TileFacade tile, TileFacade with) {
+			var holder = tile.Holder;
+			tile.Detach();
+			with.AttachTo(holder);
+			_graph.Replace(tile.Node, with.Node);
 		}
 	}
 }

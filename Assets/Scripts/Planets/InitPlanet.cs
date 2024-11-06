@@ -7,8 +7,9 @@ namespace Game.Planets {
 		[SerializeField] private TileFacade _prefab;
 
 		private void Awake() {
-			_planet.Holders.ToList().ForEach(holder => InitHolder(holder));
-			Debug.Log("Planet init");
+			_planet.GetComponentsInChildren<TileHolder>().ToList().ForEach(holder => InitHolder(holder));
+			_planet.Graph.CreateNew();
+			Debug.Log($"Planet init. Graph size: {_planet.Graph.Nodes.Count}");
 			Destroy(this);
 		}
 

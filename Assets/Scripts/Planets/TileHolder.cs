@@ -17,6 +17,10 @@ namespace Game.Planets {
 			_tile = tile;
 			_tile.OnAttach(_planet);
 		}
+		public void Detach() {
+			_tile.OnDetach(_planet);
+			_tile = null;
+		}
 
 		private void OnDrawGizmos() {
 			Gizmos.DrawWireSphere(transform.position, 0.5f);
