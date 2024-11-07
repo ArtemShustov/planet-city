@@ -193,7 +193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _selector: {fileID: 663883024}
   _planet: {fileID: 266181520}
-  _prefab: {fileID: 1484235659134753613, guid: 1f28ea3ff903ab14c9d8bb82bede948c, type: 3}
+  _prefab: {fileID: 3680338005450234507, guid: bbe48d77027d2014aa6be516107f18f3, type: 3}
 --- !u!4 &135136023
 Transform:
   m_ObjectHideFlags: 0
@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 266181519}
   - component: {fileID: 266181521}
   - component: {fileID: 266181522}
+  - component: {fileID: 266181523}
   m_Layer: 0
   m_Name: Planet
   m_TagString: Untagged
@@ -323,6 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _graph: {fileID: 266181521}
   _ticker: {fileID: 266181522}
+  _resources: {fileID: 266181523}
 --- !u!114 &266181521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,6 +354,18 @@ MonoBehaviour:
   _tickGroups:
   - {fileID: 11400000, guid: 6f8b029050532354a98f88014aaba650, type: 2}
   - {fileID: 11400000, guid: 1548157b1ee28b44ab874ff53fb4d791, type: 2}
+--- !u!114 &266181523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 266181517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d220cd4fa3fe2d499c055dafd7baf9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &372159773
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,11 +782,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1109403708}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c1a7a9fe8fe31a4da670165cd05b0df, type: 3}
+  m_Script: {fileID: 11500000, guid: 9df1662292d097644847f9e997bc251f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _fontSize: 48
-  _storage: {fileID: 0}
+  _resources: {fileID: 266181523}
 --- !u!4 &1109403710
 Transform:
   m_ObjectHideFlags: 0
