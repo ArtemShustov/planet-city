@@ -2,13 +2,9 @@
 
 namespace Game.Planets {
 	[RequireComponent(typeof(TileView))]
-	public class Tile: MonoBehaviour, ITile {
+	public class Tile: MonoBehaviour, ITile, ITileComponent {
 		public Planet Planet { get; private set; }
-		public TileView View { get; private set; }
-
-		protected virtual void Awake() {
-			View = GetComponent<TileView>();
-		}
+		public TileFacade Root { get; private set; }
 
 		public virtual void OnAttach(Planet planet) { 
 			Planet = planet;
@@ -16,5 +12,7 @@ namespace Game.Planets {
 		public virtual void OnDetach(Planet planet) { 
 			Planet = null;
 		}
+
+		public void SetCompositionRoot(TileFacade root) => Root = root;
 	}
 }

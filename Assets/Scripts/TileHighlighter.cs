@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Game {
 	public class TileHighlighter: MonoBehaviour {
-		[SerializeField] private TileSelector _selector;
+		[SerializeField] private TileFacadeSelector _selector;
 
-		private Tile _current;
+		private TileFacade _current;
 
 		private void Update() {
 			if (_selector.TrySelectUnderPointer(out var tile)) {

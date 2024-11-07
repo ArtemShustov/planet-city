@@ -14,5 +14,16 @@ namespace Game.Planets.Tiles {
 			Planet.Tick -= OnTick;
 			base.OnDetach(planet);
 		}
+
+		private void OnDrawGizmos() {
+			if (Root == null || Root.Node.Neighbors.Count == 0) {
+				return;
+			}
+			Gizmos.color = Color.yellow;
+			Gizmos.DrawSphere(transform.position, 1f);
+			foreach (var node in Root.Node.Neighbors) {
+				Gizmos.DrawLine(transform.position, node.transform.position);
+			}
+		}
 	}
 }

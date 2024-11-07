@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.Graph {
-	[RequireComponent(typeof(Tile))]
-	public class TileGraphNode: MonoBehaviour {
-		private Tile _tile;
+	[RequireComponent(typeof(TileFacade))]
+	public class TileGraphNode: MonoBehaviour, ITileComponent {
 		private List<TileGraphNode> _neighbors = new List<TileGraphNode>();
-		
-		public Tile Tile => _tile;
+		private TileFacade _root;
+
+
 		public IReadOnlyList<TileGraphNode> Neighbors => _neighbors;
+		public TileFacade Root => _root;
 
 		private void Awake() {
-			_tile = GetComponent<Tile>();
+			_root = GetComponent<TileFacade>();
 		}
 
 		public void AddNeighbor(TileGraphNode node) {
@@ -21,5 +22,7 @@ namespace Game.Graph {
 			}
 		}
 		public void ClearNeighbors() => _neighbors.Clear();
+
+		public void SetCompositionRoot(TileFacade root) => _root = root;
 	}
 }

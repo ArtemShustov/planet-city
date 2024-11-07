@@ -1,17 +1,12 @@
 ﻿using UnityEngine;
 
 namespace Game.Planets {
-	[RequireComponent(typeof(Tile))]
 	[SelectionBase]
-	public class TileView: MonoBehaviour {
+	public class TileView: MonoBehaviour, ITileComponent {
 		[SerializeField] private float _highlightHeight;
 		[SerializeField] private Transform _modelRoot;
 
-		public Tile @Tile { get; private set; }
-
-		protected virtual void Awake() {
-			@Tile = GetComponent<Tile>();
-		}
+		public TileFacade Root { get; private set; }
 
 		public void AttachTo(TileHolder holder) {
 			transform.parent = holder.transform;
@@ -21,5 +16,7 @@ namespace Game.Planets {
 		public void SetHighlight(bool state) {
 			_modelRoot.localPosition = transform.up * (state ? _highlightHeight : 0);
 		}
+
+		public void SetCompositionRoot(TileFacade root) => Root = root;
 	}
 }

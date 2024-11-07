@@ -14,8 +14,11 @@ namespace Game.Planets {
 
 		protected virtual void Awake() {
 			Tile = GetComponent<Tile>();
+			Tile.SetCompositionRoot(this);
 			View = GetComponent<TileView>();
+			View.SetCompositionRoot(this);
 			Node = GetComponent<TileGraphNode>();
+			Node.SetCompositionRoot(this);
 		}
 
 		public void AttachTo(TileHolder holder) {
