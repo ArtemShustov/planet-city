@@ -1,24 +1,14 @@
 ﻿using Game.Graph;
-using System;
+using Game.Ticking;
 using UnityEngine;
-using UnityEngine.Profiling;
 
 namespace Game.Planets {
 	public class Planet: MonoBehaviour {
 		[SerializeField] private TileGraph _graph;
-
-		public event Action Tick;
+		[SerializeField] private Ticker _ticker;
 
 		public TileGraph Graph => _graph;
-
-		public void Update() {
-			if (Input.GetKeyDown(KeyCode.Space)) {
-				Debug.Log("Planet tick.");
-				Profiler.BeginSample("Planet tick");
-				Tick?.Invoke();
-				Profiler.EndSample();
-			}
-		}
+		public Ticker Ticker => _ticker;
 
 		public void Replace(TileFacade tile, TileFacade with) {
 			var holder = tile.Holder;

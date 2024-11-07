@@ -30,5 +30,11 @@ namespace Game.Planets {
 			Holder.Detach();
 			Holder = null;
 		}
+
+		private void OnDestroy() {
+			if (Holder != null) {
+				Detach();
+			}
+		}
 	}
 }
