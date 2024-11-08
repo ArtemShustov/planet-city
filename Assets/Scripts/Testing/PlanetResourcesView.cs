@@ -12,6 +12,7 @@ namespace Game.Testing {
 			GUILayout.TextField($"Population: u{_resources.Population.Used}/c{_resources.Population.Count}", _style);
 			GUILayout.TextField($"Food: v{_resources.Food.Value}", _style);
 			GUILayout.TextField($"FactoryPower: v{_resources.FactoryPower.Value}", _style);
+			GUILayout.TextField($"Science: v{_resources.Science.Value}/t{_resources.Science.Target}", _style);
 			GUILayout.TextField($"Food factor: {_resources.FoodFactor}", _style);
 			GUILayout.TextField($"Efficiency throttle: {_resources.EfficiencyThrottle}", _style);
 		}
