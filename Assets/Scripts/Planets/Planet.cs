@@ -15,8 +15,9 @@ namespace Game.Planets {
 		public void Replace(TileFacade tile, TileFacade with) {
 			var holder = tile.Holder;
 			tile.Detach();
-			with.AttachTo(holder);
+			with.View.AttachTo(holder); // !
 			_graph.Replace(tile.Node, with.Node);
+			with.AttachTo(holder);
 		}
 	}
 }

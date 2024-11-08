@@ -2,6 +2,7 @@
 
 namespace Game.Planets.Tiles {
 	public class HouseTile: TickableTile {
+		[SerializeField] private int _moneyPerCount;
 		[SerializeField] private int _count;
 
 		private int _currentCount;
@@ -12,6 +13,10 @@ namespace Game.Planets.Tiles {
 				Planet.Resources.Population.RemoveCount(_currentCount);
 				_currentCount = count;
 				Planet.Resources.Population.AddCount(_currentCount);
+			}
+			var tax = _currentCount * _count;
+			if (tax != 0) {
+				Planet.Resources.Money.Add(tax);
 			}
 		}
 
