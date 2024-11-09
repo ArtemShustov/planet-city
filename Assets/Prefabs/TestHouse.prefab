@@ -83,4 +83,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tickGroup: {fileID: 11400000, guid: 1548157b1ee28b44ab874ff53fb4d791, type: 2}
+  _moneyPerCount: 1
   _count: 10

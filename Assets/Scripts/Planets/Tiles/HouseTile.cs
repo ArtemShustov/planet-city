@@ -14,7 +14,7 @@ namespace Game.Planets.Tiles {
 				_currentCount = count;
 				Planet.Resources.Population.AddCount(_currentCount);
 			}
-			var tax = _currentCount * _count;
+			var tax = _currentCount * _moneyPerCount;
 			if (tax != 0) {
 				Planet.Resources.Money.Add(tax);
 			}
