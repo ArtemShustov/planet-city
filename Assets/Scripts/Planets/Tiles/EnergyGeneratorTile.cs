@@ -11,10 +11,10 @@ namespace Game.Planets.Tiles {
 		[SerializeField] private int _distance;
 
 		private void AddEnergyAll() {
-			Planet.Graph.ForeachBFS(Root.Node, _distance, AddEnergy);
+			Planet.Graph.ForeachBFS(Root.Node, _distance + 1, AddEnergy);
 		}
 		private void RemoveEnergyAll() {
-			Planet.Graph.ForeachBFS(Root.Node, _distance, RemoveEnergy);
+			Planet.Graph.ForeachBFS(Root.Node, _distance + 1, RemoveEnergy);
 		}
 		private void AddEnergy(TileGraphNode node) {
 			Energy.AddFor(node.Root.Holder, _power);

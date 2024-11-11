@@ -50,6 +50,7 @@ namespace Game.Graph {
 			var visited = new HashSet<TileGraphNode>();
 			var toVisit = new Queue<(TileGraphNode node, int currentDepth)>();
 			toVisit.Enqueue((start, 0));
+			visited.Add(start);
 
 			while (toVisit.Count > 0) {
 				var (node, currentDepth) = toVisit.Dequeue();
@@ -57,10 +58,10 @@ namespace Game.Graph {
 					break;
 				}
 
-				visited.Add(node);
 				foreach (var neighbor in node.Neighbors) {
 					if (!visited.Contains(neighbor)) {
 						toVisit.Enqueue((neighbor, currentDepth + 1));
+						visited.Add(neighbor);
 					}
 				}
 				// Debug.Log($"BFS visit: {node.name}. Neighbors: {node.Neighbors.Count}. Depth: {currentDepth}");
