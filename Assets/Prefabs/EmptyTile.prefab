@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 3278439793290719601}
   - component: {fileID: 9161906730674776757}
   - component: {fileID: 1321421956522962426}
-  - component: {fileID: 549599547665108117}
+  - component: {fileID: 708740373913117367}
   m_Layer: 0
-  m_Name: TestTile
+  m_Name: EmptyTile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1403794314834393352}
+  - {fileID: 519848323179107254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &-6770189334964829572
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _highlightHeight: 0.2
-  _modelRoot: {fileID: 1403794314834393352}
+  _modelRoot: {fileID: 519848323179107254}
 --- !u!114 &1321421956522962426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,8 +87,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d3c51c93e015d54aac2312db022eea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &549599547665108117
-SphereCollider:
+--- !u!64 &708740373913117367
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -105,10 +105,11 @@ SphereCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 1.7
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &1509266628781006563
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6994934831067890684, guid: e6d3389e9880fe945884b495f478fd35, type: 3}
+--- !u!1001 &53029681201493085
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -156,10 +157,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: e6d3389e9880fe945884b495f478fd35, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 919132149155446097, guid: e6d3389e9880fe945884b495f478fd35, type: 3}
       propertyPath: m_Name
       value: tile_empty
@@ -169,8 +166,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6d3389e9880fe945884b495f478fd35, type: 3}
---- !u!4 &1403794314834393352 stripped
+--- !u!4 &519848323179107254 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e6d3389e9880fe945884b495f478fd35, type: 3}
-  m_PrefabInstance: {fileID: 1509266628781006563}
+  m_PrefabInstance: {fileID: 53029681201493085}
   m_PrefabAsset: {fileID: 0}

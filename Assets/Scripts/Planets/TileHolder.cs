@@ -4,17 +4,20 @@ using UnityEngine;
 
 namespace Game.Planets {
 	public class TileHolder: MonoBehaviour {
+		[SerializeField] private int _id = -1;
+		[SerializeField] private Planet _planet;
 		private ITile _tile;
-		private Planet _planet;
 		private Dictionary<Type, ITileResource> _resources = new Dictionary<Type, ITileResource>();
 
+		public int Id => _id;
 		public bool IsFree => _tile == null;
 		public ITile Tile => _tile;
 		public Planet Planet => _planet;
 		public IReadOnlyCollection<ITileResource> Resources => _resources.Values;
 
-		public void Init(Planet planet) {
+		public void Init(Planet planet, int id) {
 			_planet = planet;
+			_id = id;
 		}
 
 		public void Attach(ITile tile) {

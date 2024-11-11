@@ -8,6 +8,11 @@ namespace Game.Testing {
 
 		private GUIStyle _style;
 
+		private void Awake() {
+			_style = new GUIStyle();
+			_style.fontSize = _fontSize;
+		}
+
 		private void OnGUI() {
 			if (_selector.TrySelectUnderPointer(out var tile)) {
 				if (tile.Holder.TryGetResource<Energy>(out var energy)) {

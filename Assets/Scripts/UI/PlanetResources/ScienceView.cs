@@ -18,7 +18,7 @@ namespace Game.UI.PlanetResources {
 				SetFill(1);
 				return;
 			}
-			SetFill(value / target);
+			SetFill((float)value / target);
 		}
 
 		private void OnEnable() {

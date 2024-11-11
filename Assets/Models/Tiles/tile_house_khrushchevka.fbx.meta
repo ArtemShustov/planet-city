@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: e6d3389e9880fe945884b495f478fd35
+guid: 7b2d7897190346a4bb7dfda51fd6c4ea
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pad
+    second: {fileID: 2100000, guid: b7ac7693f17df0b4a880c0119d6c9d4f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

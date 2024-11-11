@@ -14,7 +14,7 @@ namespace Game.Planets {
 		}
 
 		private void InitHolder(TileHolder holder) {
-			holder.Init(_planet);
+			holder.Init(_planet, holder.Id);
 			var tile = Instantiate(_prefab);
 			tile.AttachTo(holder);
 		}
