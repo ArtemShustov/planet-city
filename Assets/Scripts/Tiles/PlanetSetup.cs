@@ -9,6 +9,7 @@ namespace Game.Tiles {
 			var tile = Instantiate(_prefab, holder);
 			tile.transform.position = holder.position;
 			tile.transform.rotation = holder.rotation;
+			tile.SetId(id);
 		}
 	}
 }

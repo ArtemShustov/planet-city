@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa5076d689166fd44b69d24ace8fa3bf, type: 3}
+  m_Name: Notifications
+  m_EditorClassIdentifier: 
+  _infoPrefab: {fileID: 8754690936082233362, guid: dc992c014507f4f42a9761d8b46e03ff, type: 3}
+  _warningPrefab: {fileID: 609883840384214719, guid: 77748d0cf252894439cb3e417733fdc7, type: 3}
+  _errorPrefab: {fileID: 4030179626346657356, guid: 2618ff5fca76d7c4cbd953b09ff01463, type: 3}
+  _notificationsPrafab: {fileID: 1483132237727814770, guid: 945dfe86e8af13042a999e16696ad2c7, type: 3}
+  _eventSystemPrefab: {fileID: 5645143090834130103, guid: 549623524bfc0c34089208729d8db97c, type: 3}

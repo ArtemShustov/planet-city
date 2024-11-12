@@ -6,9 +6,11 @@ using UnityEngine;
 namespace Game.Tiles {
 	public class Planet: MonoBehaviour {
 		[SerializeField] private TileGraph _graph;
+		private PlanetResourcesContainer _resources;
 		private List<ITile> _tiles = new();
 
 		public TileGraph Graph => _graph;
+		public PlanetResourcesContainer Resources => _resources;
 
 		private void Awake() {
 			GetAllTiles();

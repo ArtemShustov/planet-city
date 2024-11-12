@@ -1,10 +1,13 @@
 ﻿using Game.Tiles.Graph;
+using Game.Tiles.PlanetResources;
 using Game.Tiles.Resources;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 namespace Game.Tiles.Models {
 	public class EnergyGeneratorModel: TileBuildingModel {
 		[SerializeField] private int _power;
+		[Min(0)]
 		[SerializeField] private int _distance;
 
 		private void AddEnergy(TileGraphNode node) {
