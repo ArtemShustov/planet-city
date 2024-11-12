@@ -1,13 +1,12 @@
 ﻿using Game.Planets;
 using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Game {
 	public class TileFacadeSelector: MonoBehaviour {
 		[SerializeField] private LayerMask _mask;
 		[SerializeField] private Camera _camera;
-		[SerializeField] private InputAction _input;
+		[SerializeField] private ClickWithoutMovement _input;
 
 		public event Action<TileFacade> Selected;
 		public event Action NotSelected;
@@ -21,7 +20,7 @@ namespace Game {
 			return false;
 		}
 
-		private void OnClick(InputAction.CallbackContext obj) {
+		private void OnClick() {
 			if (TrySelectUnderPointer(out var tile)) {
 				Selected?.Invoke(tile);
 			} else {
@@ -30,12 +29,10 @@ namespace Game {
 		}
 
 		private void OnEnable() {
-			_input.Enable();
-			_input.performed += OnClick;
+			_input.Performed += OnClick;
 		}
 		private void OnDisable() {
-			_input.Disable();
-			_input.performed -= OnClick;
+			_input.Performed -= OnClick;
 		}
 	}
 }
