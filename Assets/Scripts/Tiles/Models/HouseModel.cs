@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using Game.Serialization;
+using UnityEngine;
 
 namespace Game.Tiles.Models {
-	public class HouseModel: TickableModel {
+	public class HouseModel: TickableModel, ISerializableComponent {
 		[SerializeField] private int _max;
 
 		private PlanetResourcesContainer _resources;
@@ -16,6 +17,15 @@ namespace Game.Tiles.Models {
 			}
 			_current = value;
 			_resources.Population.AddCount(_current);
+		}
+
+		public void WriteToTag(DataTag tag) {
+			tag.SetInt(nameof(_current), _current);
+		}
+		public void ReadFromTag(DataTag tag) {
+			if (tag.TryGetInt(nameof(_current), out var value)) {
+				SetCurrent((int)value);
+			}
 		}
 
 		public override void OnTick() {
