@@ -5,10 +5,14 @@ namespace Game.Serialization {
 	[Serializable]
 	public class DataTag: ITag {
 		[Newtonsoft.Json.JsonProperty]
-		private Dictionary<string, object> _data;
+		private Dictionary<string, object> _data = new Dictionary<string, object>();
 
 		public void Set<T>(string key, T value) {
-			_data[key] = value;
+			if (_data.ContainsKey(key)) {
+				_data[key] = value;
+			} else {
+				_data.Add(key, value);
+			}
 		}
 		public T Get<T>(string key) {
 			return (T)_data[key];

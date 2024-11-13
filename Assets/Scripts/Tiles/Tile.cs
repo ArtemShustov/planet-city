@@ -3,15 +3,16 @@ using UnityEngine;
 
 namespace Game.Tiles {
 	[RequireComponent(typeof(TileGraphNode))]
-	public class Tile: MonoBehaviour, ITile {
+	public class Tile: MonoBehaviour {
 		[SerializeField] private TileGraphNode _node;
 		[SerializeField] private int _id = -1;
-		private ITileBuilding _building;
+		private TileBuilding _building;
 		private Planet _planet;
 		private TileResources _resources = new TileResources();
 
+		public int Id => _id;
 		public TileGraphNode Node => _node;
-		public ITileBuilding Building => _building;
+		public TileBuilding Building => _building;
 		public Planet Planet => _planet;
 		public TileResources Resources => _resources;
 
@@ -26,10 +27,10 @@ namespace Game.Tiles {
 			_id = id;
 		}
 
-		public void OnAttach(ITileBuilding building) {
+		public void OnAttach(TileBuilding building) {
 			_building = building;
 		}
-		public void OnDetach(ITileBuilding building) {
+		public void OnDetach() {
 			_building = null;
 		}
     }

@@ -4,12 +4,12 @@ using UnityEngine;
 namespace Game.Tiles.Graph {
 	public class TileGraphNode: MonoBehaviour {
 		private List<TileGraphNode> _neighbors = new List<TileGraphNode>();
-		private ITile _tile;
+		private Tile _tile;
 
 		public IReadOnlyCollection<TileGraphNode> Neighbors => _neighbors;
-		public ITile Tile => _tile;
+		public Tile Tile => _tile;
 
-		public void SetTile(ITile tile) {
+		public void SetTile(Tile tile) {
 			_tile = tile;
 		}
 

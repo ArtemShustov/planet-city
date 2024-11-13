@@ -3,6 +3,7 @@ using UnityEditor;
 using System.IO;
 using System.Collections.Generic;
 using Game.Tiles;
+using Game.Serialization;
 
 namespace Game.TileRegistires.EditorTools {
 	[CustomEditor(typeof(TileBuildingRegistryService))]
@@ -50,11 +51,14 @@ namespace Game.TileRegistires.EditorTools {
 			var files = Directory.GetFiles("Assets/" + _prefabsPath, "*.prefab", SearchOption.AllDirectories);
 			foreach (var file in files) {
 				var asset = AssetDatabase.LoadAssetAtPath<TileBuilding>(file);
-				if (asset is TileBuilding tile) {
+				if (asset is TileBuilding prefab) {
 					var item = ScriptableObject.CreateInstance<TileBuildingRegistryItem>();
-					item.SetData(tile.name, tile);
+					item.SetData(prefab.name, prefab);
+					if (prefab.TryGetComponent<SerializableObject>(out var serializable)) {
+						serializable.SetId(prefab.name);
+					}
 					AssetDatabase.CreateAsset(item, $"Assets/{_itemsPath}/{item.Id}.asset");
-					Debug.Log($"Created item for '{tile.name}' with id '{item.Id}'.");
+					Debug.Log($"Created item for '{prefab.name}' with id '{item.Id}'.");
 				}
 			}
 		}

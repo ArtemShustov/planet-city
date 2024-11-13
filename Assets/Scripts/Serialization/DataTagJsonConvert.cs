@@ -8,7 +8,9 @@ namespace Game.Serialization {
 			});
 		}
 		public static DataTag FromJson(string json) {
-			return JsonConvert.DeserializeObject<DataTag>(json);
+			return JsonConvert.DeserializeObject<DataTag>(json, new JsonSerializerSettings() {
+				TypeNameHandling = TypeNameHandling.Auto,
+			});
 		}
 	}
 }

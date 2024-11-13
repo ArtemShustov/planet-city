@@ -41,6 +41,9 @@ namespace Game.Tiles.Models {
 		}
 		public override void OnDetach() {
 			_resources.Population.RemoveMax(_max);
+			if (_current > 0) {
+				_resources.Population.RemoveCount(_current);
+			}
 			_resources = null;
 			base.OnDetach();
 		}

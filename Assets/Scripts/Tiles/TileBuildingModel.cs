@@ -2,11 +2,11 @@
 
 namespace Game.Tiles {
 	public class TileBuildingModel: MonoBehaviour, ITileBuildingComponent {
-		private ITileBuilding _building;
+		private TileBuilding _building;
 
-		public ITileBuilding Root => _building;
+		public TileBuilding Root => _building;
 
-		public void SetRoot(ITileBuilding root) => _building = root;
+		public void SetRoot(TileBuilding root) => _building = root;
 
 		public virtual void OnAttach() { }
 		public virtual void OnDetach() { }

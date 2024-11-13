@@ -15,7 +15,7 @@
 			_value -= value;
 		}
 
-		public static void AddFor(ITile tile, int value) {
+		public static void AddFor(Tile tile, int value) {
 			if (tile.Resources.TryGet<TileEnergy>(out var resource)) {
 				resource.Add(value);
 			} else {
@@ -23,7 +23,7 @@
 				tile.Resources.Add(energy);
 			}
 		}
-		public static void RemoveFor(ITile tile, int value) {
+		public static void RemoveFor(Tile tile, int value) {
 			if (tile.Resources.TryGet<TileEnergy>(out var resource)) {
 				resource.Remove(value);
 				if (resource.Value <= 0) {

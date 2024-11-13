@@ -8,13 +8,13 @@ namespace Game {
 		[SerializeField] private Camera _camera;
 		[SerializeField] private ClickWithoutMovement _input;
 
-		public event Action<ITile> Selected;
+		public event Action<Tile> Selected;
 		public event Action NotSelected;
 
-		public bool TrySelectUnderPointer(out ITile tile) {
+		public bool TrySelectUnderPointer(out Tile tile) {
 			var ray = _camera.ScreenPointToRay(Input.mousePosition);
 			if (Physics.Raycast(ray, out var hit, maxDistance: 100, layerMask: _mask)) {
-				return hit.collider.TryGetComponent<ITile>(out tile);
+				return hit.collider.TryGetComponent<Tile>(out tile);
 			}
 			tile = null;
 			return false;

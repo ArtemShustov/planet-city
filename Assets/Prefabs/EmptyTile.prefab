@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8881818668525268506}
   - component: {fileID: 3990129135698550717}
   - component: {fileID: 1471509114723049289}
+  - component: {fileID: 3981266534634106329}
   m_Layer: 0
   m_Name: EmptyTile
   m_TagString: Untagged
@@ -60,6 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _node: {fileID: 1471509114723049289}
+  _id: -1
 --- !u!114 &1471509114723049289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,6 +74,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2726b04ca262b0f4e8fbe8bd8aabd2d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!64 &3981266534634106329
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921009512870935282}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6994934831067890684, guid: e6d3389e9880fe945884b495f478fd35, type: 3}
 --- !u!1001 &6347460113692619684
 PrefabInstance:
   m_ObjectHideFlags: 0

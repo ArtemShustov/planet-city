@@ -1,7 +1,5 @@
 ﻿using Game.Tiles.Graph;
-using Game.Tiles.PlanetResources;
 using Game.Tiles.Resources;
-using System.Text.RegularExpressions;
 using UnityEngine;
 
 namespace Game.Tiles.Models {

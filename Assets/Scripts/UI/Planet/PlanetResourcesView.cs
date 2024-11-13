@@ -21,7 +21,7 @@ namespace Game.UI.PlanetResources {
 			_factoryPower.UpdateLabel(_planet.Resources.Factory.Value);
 
 			_food.SetFill(_planet.Resources.FoodFactor);
-			_factory.SetFill(_planet.Resources.FoodFactor);
+			_factory.SetFill(_planet.Resources.FactoryFill);
 			_houses.SetFill(_planet.Resources.HousesFill);
 			_science.SetFill(_planet.Resources.Research);
 		}

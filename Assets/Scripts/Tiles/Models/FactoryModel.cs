@@ -12,10 +12,10 @@ namespace Game.Tiles.Models {
 				return;
 			}
 			if (_current != 0) {
-				_resources.Factory.Add(_current);
+				_resources.Factory.Remove(_current);
 			}
 			_current = value;
-			_resources.Factory.Remove(_current);
+			_resources.Factory.Add(_current);
 		}
 
 		public override void OnTick() {

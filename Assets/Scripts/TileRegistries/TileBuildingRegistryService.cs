@@ -1,4 +1,5 @@
 ﻿using Game.Services;
+using System.Linq;
 using UnityEngine;
 
 namespace Game.TileRegistires {
@@ -10,6 +11,14 @@ namespace Game.TileRegistires {
 
 		public void SetBuildings(TileBuildingRegistryItem[] buildings) {
 			_buildings = buildings;
+		}
+
+		public TileBuildingRegistryItem Get(string id) {
+			return _buildings.First(i => i.Id == id);
+		}
+		public bool TryGet(string id, out TileBuildingRegistryItem item) {
+			item = _buildings.FirstOrDefault(i => i.Id == id);
+			return item != null;
 		}
 	}
 }

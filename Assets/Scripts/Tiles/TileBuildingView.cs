@@ -2,13 +2,17 @@
 
 namespace Game.Tiles {
 	public class TileBuildingView: MonoBehaviour, ITileBuildingComponent {
-		private ITileBuilding _building;
+		private TileBuilding _building;
 
-		public ITileBuilding Root => _building;
+		public TileBuilding Root => _building;
 
-		public void SetRoot(ITileBuilding root) => _building = root;
+		public void SetRoot(TileBuilding root) => _building = root;
 
-		public virtual void OnAttach() { }
+		public virtual void OnAttach() {
+			transform.parent = Root.Tile.transform;
+			transform.localPosition = Vector3.zero;
+			transform.localRotation = Quaternion.identity;
+		}
 		public virtual void OnDetach() { }
 	}
 }

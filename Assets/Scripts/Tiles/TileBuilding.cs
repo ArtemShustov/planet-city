@@ -1,21 +1,17 @@
 ﻿using Game.Utils;
-using System;
 using UnityEngine;
 
 namespace Game.Tiles {
-	public class TileBuilding: MonoBehaviour, ITileBuilding {
+	public class TileBuilding: MonoBehaviour {
 		[HideInPlayMode]
 		[SerializeField] private TileBuildingModel _model;
 		[HideInPlayMode]
 		[SerializeField] private TileBuildingView _view;
 
-		private ITile _root;
+		private Tile _root;
 		private Planet _planet;
 
-		public event Action Attached;
-		public event Action Detached;
-
-		public ITile Tile => _root;
+		public Tile Tile => _root;
 		public Planet Planet => _planet;
 
 		private void Awake() {
@@ -23,15 +19,17 @@ namespace Game.Tiles {
 			_view.SetRoot(this);
 		}
 
-		public virtual void OnAttach(Planet planet, ITile tile) {
+		public virtual void OnAttach(Planet planet, Tile tile) {
 			_root = tile;
 			_planet = planet;
-			Attached?.Invoke();
+			_model.OnAttach();
+			_view.OnAttach();
 		}
-		public virtual void OnDetach(Planet planet, ITile tile) {
+		public virtual void OnDetach() {
+			_model.OnDetach();
+			_view.OnDetach();
 			_root = null;
 			_planet = null;
-			Detached?.Invoke();
 		}
 	}
 }
