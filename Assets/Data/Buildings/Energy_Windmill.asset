@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 3160089519393714243, guid: 0ad4e0462d12a7443a30291783c49dab, type: 3}
   _id: Energy_Windmill
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: fcfe45dae8f5bec4ea8ce0fa7ae49ce8, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 885277018856679501, guid: 3a5acc6fb00a34c4084793f9c163d99d, type: 3}
   _id: House_Skyscraper
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: f3d1a5edcdcbeb945ae3b0c4b3825379, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

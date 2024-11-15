@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 2375227409344027851, guid: 31987abb02f4310498629ee7f542e422, type: 3}
   _id: Energy_Nuclear
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: b8cf7e166654de546b2f5faa5a747f8e, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

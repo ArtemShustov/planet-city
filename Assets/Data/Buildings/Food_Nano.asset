@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 3623679812085975120, guid: 434663b57742d2a44919929e8298292b, type: 3}
   _id: Food_Nano
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: eac0d351c23fca74393e1503a2f1b9e3, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

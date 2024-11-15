@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 2003543473480110913, guid: de3877e8925167a47ba1744ecc9a84fe, type: 3}
   _id: Food_Granary
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 45ba14ee718c49d459aff71961d75527, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

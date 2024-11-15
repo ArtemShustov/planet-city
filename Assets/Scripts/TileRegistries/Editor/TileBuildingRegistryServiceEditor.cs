@@ -28,6 +28,10 @@ namespace Game.TileRegistires.EditorTools {
 				if (GUILayout.Button($"Load items from Assets/{_itemsPath}/")) {
 					LoadItems();
 				}
+
+				if (GUILayout.Button("Create icons")) {
+					GenerateIcons();
+				}
 			}
 			EditorGUILayout.EndFoldoutHeaderGroup();
 		}
@@ -64,6 +68,26 @@ namespace Game.TileRegistires.EditorTools {
 					Debug.Log($"Created item for '{prefab.name}' with id '{item.Id}'.");
 				}
 			}
+		}
+		private void GenerateIcons() {
+			var files = Directory.GetFiles("Assets/" + _itemsPath, "*.asset", SearchOption.AllDirectories);
+			if (!Directory.Exists($"Assets/{_itemsPath}/icons")) {
+				AssetDatabase.CreateFolder($"Assets/{_itemsPath}", "icons");
+			}
+			RuntimePreviewGenerator.BackgroundColor = Color.gray;
+			RuntimePreviewGenerator.MarkTextureNonReadable = false;
+			RuntimePreviewGenerator.PreviewDirection = new Vector3(0, -0.5f, 1);
+
+			foreach (var file in files) {
+				var asset = AssetDatabase.LoadAssetAtPath<ScriptableObject>(file);
+				if (asset is TileBuildingRegistryItem item) {
+					var texture = RuntimePreviewGenerator.GenerateModelPreview(item.Prefab.transform, width: 256, height: 256);
+					File.WriteAllBytes($"Assets/{_itemsPath}/icons/{item.name}.png", texture.EncodeToPNG());
+					Debug.Log($"Created icon for '{item.Id}'.");
+				}
+			}
+
+			AssetDatabase.Refresh();
 		}
 	}
 }

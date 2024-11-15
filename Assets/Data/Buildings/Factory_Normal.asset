@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 116738085497164652, guid: 4a0eac8d35851fa47b164bc9b9733e77, type: 3}
   _id: Factory_Normal
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 19dded6497b0723448de7291a12d25c9, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 1918107707478531872, guid: bb388567113ac02498eef57b5d9174d9, type: 3}
   _id: Food_Farm
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: eab1621b7f7e64b47956859364b98c4f, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

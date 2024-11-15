@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 817582084127111151, guid: d971c7f8b568e78429442f79877533a4, type: 3}
   _id: Energy_Steam
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 0b65f34ba10050c4caf8e4a486d0ca7f, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

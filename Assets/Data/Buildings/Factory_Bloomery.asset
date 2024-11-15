@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 2375227409344027851, guid: 942f579617f95d543a1d30375be699c8, type: 3}
   _id: Factory_Bloomery
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: ab10054a47106a5468ba63541e002ca5, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a

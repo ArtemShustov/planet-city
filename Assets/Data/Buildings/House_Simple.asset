@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 8456704817182213733, guid: 30df2243f4eb42b4d9d179dcffc4fdf9, type: 3}
   _id: House_Simple
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: a73236ea1ea598f42a545dcfc2ae3105, type: 3}
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
