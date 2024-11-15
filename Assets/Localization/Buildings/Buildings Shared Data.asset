@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Buildings Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Buildings
+  m_TableCollectionNameGuidString: 84865ec91eb11764bb44c8b8653f518a
+  m_Entries:
+  - m_Id: 117007441920
+    m_Key: Energy_Nuclear_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211119235072
+    m_Key: Energy_Nuclear_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100662930038784
+    m_Key: Energy_Nuclear_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101035044495360
+    m_Key: Energy_Steam_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101127889608704
+    m_Key: Energy_Steam_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101377631051776
+    m_Key: Energy_Steam_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106386703769600
+    m_Key: Energy_Windmill_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106480375160832
+    m_Key: Energy_Windmill_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106620892733440
+    m_Key: Energy_Windmill_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259774997323776
+    m_Key: Factory_Bloomery_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259943549624320
+    m_Key: Factory_Bloomery_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260252359450624
+    m_Key: Factory_Bloomery_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260638348664832
+    m_Key: Factory_Normal_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260722666758144
+    m_Key: Factory_Normal_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260899502809088
+    m_Key: Factory_Normal_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299726997020672
+    m_Key: Food_Farm_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299804675530752
+    m_Key: Food_Farm_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299869750157312
+    m_Key: Food_Farm_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300344444706816
+    m_Key: Food_Granary_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300426002948096
+    m_Key: Food_Granary_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300481267097600
+    m_Key: Food_Granary_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300591304663040
+    m_Key: Food_Nano_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300663979368448
+    m_Key: Food_Nano_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300829947977728
+    m_Key: Food_Nano_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 301174719766528
+    m_Key: House_Khrushchevka_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 301231028297728
+    m_Key: House_Khrushchevka_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 301301823954944
+    m_Key: House_Khrushchevka_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302346188873728
+    m_Key: House_Simple_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302428195905536
+    m_Key: House_Simple_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302542260002816
+    m_Key: House_Simple_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302609373061120
+    m_Key: House_Skyscraper_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302763236909056
+    m_Key: House_Skyscraper_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302809353281536
+    m_Key: House_Skyscraper_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311118454054912
+    m_Key: Lab_Lib_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311297643110400
+    m_Key: Lab_Lib_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311313459830784
+    m_Key: Lab_Lib_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311979729215488
+    m_Key: Lab_Observatory_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312000281305088
+    m_Key: Lab_Observatory_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312015858950144
+    m_Key: Lab_Observatory_Short
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312248122728448
+    m_Key: Lab_Sphere_Name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312313197355008
+    m_Key: Lab_Sphere_Desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312324433895424
+    m_Key: Lab_Sphere_Short
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 4064583653158289640
+  references:
+    version: 2
+    RefIds:
+    - rid: 4064583653158289640
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1731581509976

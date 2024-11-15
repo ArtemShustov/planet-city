@@ -14,3 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 3160089519393714243, guid: 0ad4e0462d12a7443a30291783c49dab, type: 3}
   _id: Energy_Windmill
+  _icon: {fileID: 0}
+  _name:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 106386703769600
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 106480375160832
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _shortDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 106620892733440
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

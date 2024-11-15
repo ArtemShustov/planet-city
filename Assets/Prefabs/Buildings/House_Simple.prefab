@@ -126,6 +126,10 @@ PrefabInstance:
       propertyPath: _count
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 8435328676873970251, guid: f8ce11ff354d8d849a51a5a37ab0ace9, type: 3}
+      propertyPath: _id
+      value: House_Simple
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6201925829721495421, guid: f8ce11ff354d8d849a51a5a37ab0ace9, type: 3}

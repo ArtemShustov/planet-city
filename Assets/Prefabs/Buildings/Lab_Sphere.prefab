@@ -70,6 +70,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1342142688768105113, guid: 6fc4b20311d2ac345b7fcfd7001009a7, type: 3}
+      propertyPath: _id
+      value: Lab_Sphere
+      objectReference: {fileID: 0}
     - target: {fileID: -34329076019365283, guid: 6fc4b20311d2ac345b7fcfd7001009a7, type: 3}
       propertyPath: _points
       value: 100

@@ -14,3 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 1918107707478531872, guid: 6fc4b20311d2ac345b7fcfd7001009a7, type: 3}
   _id: Lab_Lib
+  _icon: {fileID: 0}
+  _name:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 311118454054912
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 311297643110400
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _shortDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 311313459830784
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

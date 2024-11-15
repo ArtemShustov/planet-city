@@ -14,3 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 2003543473480110913, guid: de3877e8925167a47ba1744ecc9a84fe, type: 3}
   _id: Food_Granary
+  _icon: {fileID: 0}
+  _name:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 300344444706816
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 300426002948096
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _shortDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 300481267097600
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

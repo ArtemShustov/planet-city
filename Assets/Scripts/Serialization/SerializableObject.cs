@@ -5,6 +5,7 @@ namespace Game.Serialization {
 	public class SerializableObject: MonoBehaviour {
 		[SerializeField] private string _id;
 
+		public string Id => _id;
 		public void SetId(string id) => _id = id;
 
 		public void WriteTag(DataTag tag) {

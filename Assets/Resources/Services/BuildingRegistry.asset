@@ -12,4 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f13ed4193eb153246a6a51e24c1e11bb, type: 3}
   m_Name: BuildingRegistry
   m_EditorClassIdentifier: 
-  _tiles: []
+  _buildings:
+  - {fileID: 11400000, guid: c7aefc6bfd76eed4f82b2955c48e319a, type: 2}
+  - {fileID: 11400000, guid: 3f30494cc3c33264ca7be9d37770e9ba, type: 2}
+  - {fileID: 11400000, guid: 9dc07882338740f46a2f82f725fb4664, type: 2}
+  - {fileID: 11400000, guid: 2c4e18f26b51d8846bab803e429618f3, type: 2}
+  - {fileID: 11400000, guid: e2b3a33fa8733ed4fa87948e3b82fe8e, type: 2}
+  - {fileID: 11400000, guid: 2dc3b12b46dc0104db4808ffda5f9ccd, type: 2}
+  - {fileID: 11400000, guid: c90f2ea422a34964488af9f83de8043b, type: 2}
+  - {fileID: 11400000, guid: e051c04a806d70e409d3f7a0d0f211dd, type: 2}
+  - {fileID: 11400000, guid: 69913c5e572dbbe498986843d8f239c6, type: 2}
+  - {fileID: 11400000, guid: b13fa2cc3923a024cb93b4b659f95128, type: 2}
+  - {fileID: 11400000, guid: fc33459a37227c74d8ed5ab3d7a116fb, type: 2}
+  - {fileID: 11400000, guid: 1a8fd5c5be874fa4cac09ca992c69b49, type: 2}
+  - {fileID: 11400000, guid: 8499f80045bf3b94ea28116375191009, type: 2}
+  - {fileID: 11400000, guid: 2083b7ba6b2b931448d97d7d99aa33f9, type: 2}

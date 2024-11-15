@@ -14,3 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 885277018856679501, guid: 3a5acc6fb00a34c4084793f9c163d99d, type: 3}
   _id: House_Skyscraper
+  _icon: {fileID: 0}
+  _name:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 302609373061120
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 302763236909056
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _shortDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 302809353281536
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

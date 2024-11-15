@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Factory_Normal
       objectReference: {fileID: 0}
+    - target: {fileID: 2759000279864479711, guid: 942f579617f95d543a1d30375be699c8, type: 3}
+      propertyPath: _id
+      value: Factory_Normal
+      objectReference: {fileID: 0}
     - target: {fileID: 3314909781494934727, guid: 942f579617f95d543a1d30375be699c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

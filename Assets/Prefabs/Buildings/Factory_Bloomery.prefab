@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ed79f75f1d3e7946aed4bbc83aa561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 
+  _id: Factory_Bloomery
 --- !u!1001 &9193750051240432702
 PrefabInstance:
   m_ObjectHideFlags: 0

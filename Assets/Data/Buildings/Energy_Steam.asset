@@ -14,3 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefab: {fileID: 817582084127111151, guid: d971c7f8b568e78429442f79877533a4, type: 3}
   _id: Energy_Steam
+  _icon: {fileID: 0}
+  _name:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 101035044495360
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _description:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 101127889608704
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  _shortDescription:
+    m_TableReference:
+      m_TableCollectionName: GUID:84865ec91eb11764bb44c8b8653f518a
+    m_TableEntryReference:
+      m_KeyId: 101377631051776
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []

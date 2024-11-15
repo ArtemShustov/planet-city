@@ -122,6 +122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5201499476479591042, guid: 31987abb02f4310498629ee7f542e422, type: 3}
+      propertyPath: _id
+      value: Energy_Steam
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6648163455449674230, guid: 31987abb02f4310498629ee7f542e422, type: 3}

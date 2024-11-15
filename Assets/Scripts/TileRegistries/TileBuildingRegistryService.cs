@@ -1,4 +1,5 @@
 ﻿using Game.Services;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ namespace Game.TileRegistires {
 	public class TileBuildingRegistryService: GameService {
 		[SerializeField] private TileBuildingRegistryItem[] _buildings = new TileBuildingRegistryItem[0];
 		
+		public IReadOnlyCollection<TileBuildingRegistryItem> Items => _buildings;
+
 		public override void Init(GameServices services) { }
 
 		public void SetBuildings(TileBuildingRegistryItem[] buildings) {

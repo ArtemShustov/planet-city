@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Buildings_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 84865ec91eb11764bb44c8b8653f518a, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 117007441920
+    m_Localized: Nuclear reactor
+    m_Metadata:
+      m_Items: []
+  - m_Id: 211119235072
+    m_Localized: Small nuclear reactor. Generate a lot of energy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 100662930038784
+    m_Localized: '<sprite name="energy"> <#00FF00>+100</color>
+
+      <sprite name="dist">
+      <#FFFFFF>2</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101035044495360
+    m_Localized: Steam engine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101127889608704
+    m_Localized: Small steam engine. Generate energy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 101377631051776
+    m_Localized: '<sprite name="energy"> <#00FF00>+10</color>
+
+      <sprite name="dist">
+      <#FFFFFF>1</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106386703769600
+    m_Localized: Windmill
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106480375160832
+    m_Localized: Old windmill. Generate energy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 106620892733440
+    m_Localized: '<sprite name="energy"> <#00FF00>+1</color>
+
+      <sprite name="dist">
+      <#FFFFFF>1</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259774997323776
+    m_Localized: Bloomery
+    m_Metadata:
+      m_Items: []
+  - m_Id: 259943549624320
+    m_Localized: Small bloomery. Used to smelth iron.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260252359450624
+    m_Localized: '<sprite name="factory"> <#00FF00>+10</color>
+
+      <sprite name="people">
+      <#FFFFFF>10</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260638348664832
+    m_Localized: Common factory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260722666758144
+    m_Localized: Common factory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 260899502809088
+    m_Localized: '<sprite name="factory"> <#00FF00>+100</color>
+
+      <sprite name="people">
+      <#FFFFFF>100</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299726997020672
+    m_Localized: Farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299804675530752
+    m_Localized: Just farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 299869750157312
+    m_Localized: <sprite name="food"> <#00FF00>+10</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300344444706816
+    m_Localized: Cow's granary
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300426002948096
+    m_Localized: No desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300481267097600
+    m_Localized: <sprite name="food"> <#00FF00>+150</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300591304663040
+    m_Localized: Nano farm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300663979368448
+    m_Localized: No desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 300829947977728
+    m_Localized: <sprite name="food"> <#00FF00>+1000</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 301174719766528
+    m_Localized: Khrushchevka
+    m_Metadata:
+      m_Items: []
+  - m_Id: 301231028297728
+    m_Localized: Type of low-cost, concrete-paneled apartment building which were
+      designed and constructed in the Soviet Union since the early 1960s (when their
+      namesake, Nikita Khrushchev, was leader of the Soviet Union).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 301301823954944
+    m_Localized: <sprite name="people"> <#00FF00>+100</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302346188873728
+    m_Localized: Small houses
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302428195905536
+    m_Localized: No desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302542260002816
+    m_Localized: <sprite name="people"> <#00FF00>+10</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302609373061120
+    m_Localized: Skyscraper
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302763236909056
+    m_Localized: No desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 302809353281536
+    m_Localized: <sprite name="people"> <#00FF00>+1000</color>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311118454054912
+    m_Localized: Alexandria Library
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311297643110400
+    m_Localized: No desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311313459830784
+    m_Localized: '<sprite name="science"> <#00FF00>+1</color>
+
+      <sprite name="energy">
+      <#FF0000>-1</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 311979729215488
+    m_Localized: Ovservatory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312015858950144
+    m_Localized: '<sprite name="science"> <#00FF00>+15</color>
+
+      <sprite name="energy">
+      <#FF0000>-5</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312000281305088
+    m_Localized: No desc
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312324433895424
+    m_Localized: '<sprite name="science"> <#00FF00>+100</color>
+
+      <sprite name="energy">
+      <#FF0000>-100</color>'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312248122728448
+    m_Localized: Nono labaratory
+    m_Metadata:
+      m_Items: []
+  - m_Id: 312313197355008
+    m_Localized: No desc
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

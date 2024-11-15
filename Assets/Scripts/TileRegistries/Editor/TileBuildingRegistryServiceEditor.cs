@@ -46,6 +46,7 @@ namespace Game.TileRegistires.EditorTools {
 			Debug.Log($"Total: {list.Count}");
 
 			service.SetBuildings(list.ToArray());
+			EditorUtility.SetDirty(service);
 		}
 		private void CreateItems() {
 			var files = Directory.GetFiles("Assets/" + _prefabsPath, "*.prefab", SearchOption.AllDirectories);
@@ -56,7 +57,9 @@ namespace Game.TileRegistires.EditorTools {
 					item.SetData(prefab.name, prefab);
 					if (prefab.TryGetComponent<SerializableObject>(out var serializable)) {
 						serializable.SetId(prefab.name);
+						EditorUtility.SetDirty(prefab);
 					}
+					EditorUtility.SetDirty(item);
 					AssetDatabase.CreateAsset(item, $"Assets/{_itemsPath}/{item.Id}.asset");
 					Debug.Log($"Created item for '{prefab.name}' with id '{item.Id}'.");
 				}

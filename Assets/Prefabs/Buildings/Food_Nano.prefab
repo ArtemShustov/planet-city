@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4120454871524705942, guid: bb388567113ac02498eef57b5d9174d9, type: 3}
+      propertyPath: _id
+      value: Food_Nano
+      objectReference: {fileID: 0}
     - target: {fileID: 4922621453862995485, guid: bb388567113ac02498eef57b5d9174d9, type: 3}
       propertyPath: _count
       value: 1000
